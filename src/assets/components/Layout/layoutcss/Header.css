@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.conteiner-menu-login {
+  display: flex;
+  width: 20% !important;
+  padding: 10px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  
+  
+}
 .conteiner-header {
   background-color: #141313;
   width: 100%;
@@ -15,16 +26,17 @@
 }
 
 .conteiner-tittle-header {
-  width: 80%;
+  width: 60%;
   color: #fff;
   display: flex;
   justify-content: first baseline;
   align-items: center;
-  margin-left: 20px;
+
   color: #fff;
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
+  margin-left: 20px !important;
 
 }
 .conteiner-tittle-header:hover{
@@ -56,11 +68,4 @@
   padding-left: 7px;
 }
 
-.conteiner-menu-login {
-  padding: 10px;
-  margin-right: 50px;
-  display: flex;
-  align-items: center;
-  width: 22%;
-  
-}
+

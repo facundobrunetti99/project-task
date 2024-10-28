@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <div className="conteiner-header">
       <Link className="conteiner-tittle-header" to="/">Seguimiento de tareas</Link>
-
       <div className="conteiner-menu-login">
         <li className="li-login">
         <Link to="/login">Iniciar sesion</Link>

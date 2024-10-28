@@ -1,16 +1,19 @@
 import React from "react";
 import "./layoutcss/Header.css";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="conteiner-header">
-      <p className="conteiner-tittle-header">Seguimiento de tareas</p>
+      <Link className="conteiner-tittle-header" to="/">Seguimiento de tareas</Link>
 
       <div className="conteiner-menu-login">
         <li className="li-login">
-          <a href="#">Iniciar sesion</a>
+        <Link to="/login">Iniciar sesion</Link>
         </li>
         <li className="li-login singup-li">
-          <a href="#">Registrarse</a>
+        <Link to="/login">Registrarse</Link>
+          
         </li>
       </div>
     </div>

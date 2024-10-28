@@ -8,17 +8,22 @@
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 2px solid rgb(8, 185, 141);
+  text-align: left;
+  
 }
+
 .conteiner-tittle-header {
   width: 80%;
   color: #fff;
-  margin: auto;
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  margin-left: 20px;
   color: #fff;
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 15px;
   text-decoration: none;
 
 }

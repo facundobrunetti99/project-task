@@ -3,6 +3,7 @@ import { createBrowserRouter, Router } from "react-router-dom";
 import HomePu from "../assets/components/Home/Public/HomePu";
 import HomePriv from"../assets/components/Home/Private/HomePriv"
 import Login from "../assets/components/Login/Login";
+import HeaderPriv from "../assets/components/Layout/HeaderPriv"
 import { useAuth } from "../auth/AuthProvider";
 import { Navigate } from "react-router-dom";
 

@@ -1,6 +1,21 @@
-import React from 'react'
 import './layoutcss/HeaderPriv.css'
+import { useAuth } from '../../../auth/AuthProvider';
+import { Link, useNavigate } from "react-router-dom";
 const HeaderPriv = () => {
+    const {logout}=useAuth();
+    const navigate=useNavigate();
+
+    const onClickCerrar =() => {
+      try {
+          logout();
+          navigate('/')
+      
+      } catch (error) {
+          console.error('Error al cerra sesion', error);
+      }
+  };
+ 
+
     return (
       <div className="conteiner-header">
         <div className="conteiner-menu-login">
@@ -16,7 +31,8 @@ const HeaderPriv = () => {
             </svg>
           </a>
         </div>
-        <p className="conteiner-tittle-header">Task Tracer</p>
+        <Link className="conteiner-tittle-header">Seguimiento de tareas</Link>
+        <Link to="/" className='close_a' onClick={onClickCerrar}>Cerra Sesion</Link>
       </div>
     );
 }

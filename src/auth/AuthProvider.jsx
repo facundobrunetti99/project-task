@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
             setIsAuthenticated(true);
             setUser(data.data.user);
         } catch (error) {
-            console.log('Error en la petición de login: ', error);
+            alert('Error en la petición de login: ', error);
             throw error;
         }
     };

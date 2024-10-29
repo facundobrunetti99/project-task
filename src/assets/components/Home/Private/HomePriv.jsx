@@ -1,18 +1,30 @@
 import React from 'react'
 import HeaderPriv from '../../Layout/HeaderPriv'
 import Footer from '../../Footer/Footer'
+import {Link,useNavigate } from 'react-router-dom'
+
 const HomePriv = () => {
+  const navigate = useNavigate();
+
+  const handleNavigateProjects = () => {
+    navigate("/protected/projects");
+    console.log("toca")
+  };
+
+
   return (
     <>
     <HeaderPriv></HeaderPriv>    
     
     <div className="main-home-public">
       <h1 className="title-home">Funcionalidades Principales</h1>
-    <div className="content-proyect">
+    <Link to={"/protected/projects"} onClick={handleNavigateProjects} className="content-proyect">
     <svg class="icon icon-tabler icon-tabler-git-pull-request-draft" fill="none" height="120" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="120" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><circle cx="6" cy="18" r="2"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M6 8v8"/><path d="M18 11h.01"/><path d="M18 6h.01"/></svg>
       <h2 className="content-proyect-title">Proyectos</h2>
       <p className="content-proyect-paragraph">Crea, desarrolla y organiza proyectos</p>
-    </div>
+      
+    </Link>
+   
     <div className="content-proyect">
     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" style={{fill: "rgb(8, 185, 141)"}}><path d="M22 7.999a1 1 0 0 0-.516-.874l-9.022-5a1.003 1.003 0 0 0-.968 0l-8.978 4.96a1 1 0 0 0-.003 1.748l9.022 5.04a.995.995 0 0 0 .973.001l8.978-5A1 1 0 0 0 22 7.999zm-9.977 3.855L5.06 7.965l6.917-3.822 6.964 3.859-6.918 3.852z"></path><path d="M20.515 11.126 12 15.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path><path d="M20.515 15.126 12 19.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path></svg>   
     <h2 className="content-proyect-title">Epicas</h2>

@@ -31,7 +31,7 @@ const HeaderPriv = () => {
             </svg>
           </a>
         </div>
-        <Link className="conteiner-tittle-header">Seguimiento de tareas</Link>
+        <Link to="/" className="conteiner-tittle-header">Seguimiento de tareas</Link>
         <Link to="/" className='close_a' onClick={onClickCerrar}>Cerra Sesion</Link>
       </div>
     );

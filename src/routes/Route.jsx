@@ -3,9 +3,10 @@ import { createBrowserRouter, Router } from "react-router-dom";
 import HomePu from "../assets/components/Home/Public/HomePu";
 import HomePriv from"../assets/components/Home/Private/HomePriv"
 import Login from "../assets/components/Login/Login";
-import HeaderPriv from "../assets/components/Layout/HeaderPriv"
+
 import { useAuth } from "../auth/AuthProvider";
 import { Navigate } from "react-router-dom";
+import Projects from "../assets/components/Projects/Projects";
 
 const PrivateRoute = ({ children }) => {
     const { isAuthenticated } = useAuth();
@@ -25,12 +26,25 @@ const router = createBrowserRouter([
     element: <Login></Login>,
   },
   {
-    path: '/protected', 
+    path: "/protected", 
     element: (
       <PrivateRoute>
         <HomePriv /> 
       </PrivateRoute>
     ),
   },
+  {
+    path:"/protected/projects",
+  
+    element: (
+    
+      <PrivateRoute>
+      <Projects /> 
+    </PrivateRoute>
+  ),
+
+  }
+  
+  ,
 ]);
 export default router;

@@ -8,21 +8,19 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { login } = useAuth();
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await login(username, password);
-        navigate('/protected')
-    
+      await login(username, password);
+      navigate("/home");
     } catch (error) {
-        console.error('Error al iniciar sesión', error);
+      console.error("Error al iniciar sesión", error);
     }
-};
+  };
 
   return (
     <>
@@ -36,8 +34,8 @@ const Login = () => {
             type="text"
             placeholder="Ingresar usuario"
             value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
+            onChange={(e) => setUsername(e.target.value)}
+            required
           />
 
           <input
@@ -48,9 +46,10 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-           <button type="submit" className="button_form" >Iniciar sesion</button>
+          <button type="submit" className="button_form">
+            Iniciar sesion
+          </button>
         </form>
-       
 
         <a className="pw_a" href="#">
           ¿Olvidaste tu contraseña?

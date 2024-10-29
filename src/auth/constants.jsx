@@ -1,1 +1,1 @@
-export const URL = 'https://lamansysfaketaskmanagerapi.onrender.com/api'
+export const URL = "https://lamansysfaketaskmanagerapi.onrender.com/api";

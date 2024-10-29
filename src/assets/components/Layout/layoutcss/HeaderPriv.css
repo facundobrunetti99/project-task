@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .conteiner-header {
   background-color: #000;
   width: 100%;
@@ -11,22 +12,29 @@
   display: flex;
   justify-content: space-between;
 }
+
 .conteiner-menu-login {
   width: 10%;
   padding: 10px;
   margin-left: 10px;
 }
+
 .conteiner-tittle-header {
   width: 80%;
   color: #fff;
-  margin: auto;
+
   color: #fff;
   font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
 
-  text-align: right;
+  text-align: center;
+
+  margin-left: -180px !important;
 }
-.close_a{
+
+.close_a {
   text-align: center;
   display: flex;
   align-items: center;
@@ -37,7 +45,8 @@
   color: #fff;
   text-decoration: none;
 }
-.close_a:hover{
 
-    color: #cfcece;
+.close_a:hover {
+
+  color: #cfcece;
 }

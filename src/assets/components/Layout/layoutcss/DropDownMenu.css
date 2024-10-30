@@ -41,12 +41,17 @@
   }
   
   .dropdown-menu li {
+   
     padding: 8px 16px;
     cursor: pointer;
     font-size: 20px;
     margin: 15px 0;
   }
-  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
   .dropdown-menu li:hover {
     background-color: #252424;
   }

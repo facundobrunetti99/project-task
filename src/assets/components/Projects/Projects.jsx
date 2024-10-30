@@ -11,6 +11,7 @@ const Projects = () => {
   return (
     <>
       <HeaderPriv />
+      
       <div className="content-projects">
         {loadingProjects ? (
           <p className="loading-project">Cargando proyectos...</p>

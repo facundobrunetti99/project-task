@@ -7,6 +7,7 @@ export const useFetchEpics = (projectId) => {
         loading: true
     });
 
+
     useEffect(() => {
         if (projectId) {
             getEpics(projectId)

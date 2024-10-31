@@ -1,5 +1,5 @@
 import './layoutcss/HeaderPriv.css'
-import { useAuth } from '../../../auth/AuthProvider';
+import { useAuth } from '../../auth/AuthProvider'
 import { Link, useNavigate } from "react-router-dom";
 import DropdownMenu from './DropDownMenu';
 const HeaderPriv = () => {

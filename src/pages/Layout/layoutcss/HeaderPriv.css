@@ -22,15 +22,12 @@
 .conteiner-tittle-header {
   width: 80%;
   color: #fff;
-
   color: #fff;
   font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
-
   text-align: center;
-
   margin-left: -180px !important;
 }
 
@@ -47,6 +44,5 @@
 }
 
 .close_a:hover {
-
   color: #cfcece;
 }

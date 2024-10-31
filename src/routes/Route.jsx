@@ -1,13 +1,12 @@
 import React from "react";
 import { createBrowserRouter, Router } from "react-router-dom";
-import HomePu from "../assets/components/Home/Public/HomePu";
-import HomePriv from "../assets/components/Home/Private/HomePriv";
-import Login from "../assets/components/Login/Login";
-
+import HomePriv from "../pages/Home/Private/HomePriv";
+import HomePu from "../pages/Home/Public/HomePu";
+import Login from "../pages/Login/Login";
 import { useAuth } from "../auth/AuthProvider";
 import { Navigate } from "react-router-dom";
-import Projects from "../assets/components/Projects/Projects";
-
+import Projects from "../pages/Projects/Projects";
+import { Epics } from "../pages/Epics/Epics";
 const PrivateRoute = ({ children }) => {
   const { isAuthenticated } = useAuth();
   return isAuthenticated ? children : <Navigate to="/login" />;
@@ -41,5 +40,10 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
   },
+
+  {
+    path:"/home/projects/:projectId/epics" ,
+    element: (<PrivateRoute><Epics /></PrivateRoute>)
+  }
 ]);
 export default router;

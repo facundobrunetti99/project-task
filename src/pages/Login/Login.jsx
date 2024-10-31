@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../Layout/Header";
-import "../Login/css/Login.css";
+import Header from "../Layout/Header"
+import "./Login.css";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
-import { useAuth } from "../../../auth/AuthProvider";
+import { useAuth } from "../../auth/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
